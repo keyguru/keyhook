@@ -1,6 +1,6 @@
 {
   "name": "@keyguru/keyhook",
-  "version": "1.0.7",
+  "version": "1.0.11",
   "description": "Universal webhook server",
   "main": "keyhook.js",
   "bin": {

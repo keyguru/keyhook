@@ -34,12 +34,13 @@ describe('Trigger', function () {
     });
 
 
-    it('Should stop server', function (done) {
-        server.stop_server();        
+    it('Should stop server', function () {
+        server.stop_server();
         setTimeout(() => {
-            process.exit(0);
-            done();
-        }, 1000);
+            if (process.env.ENVIRONMENT === "circleci") {
+                process.exit(0);
+            }
+        }, 10000);
     });
     
 });
