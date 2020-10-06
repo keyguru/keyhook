@@ -30,7 +30,7 @@ describe('Server', function () {
     });
 
     describe('#stop()', function () {
-        xit('should stop server', function (done) {
+        it('should stop server', function (done) {
             expect(server.stop_server());
             done();
         });
