@@ -1,8 +1,9 @@
 {
   "name": "keyhook",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Universal webhook server",
   "main": "keyhook.js",
+  "bin": "keyhook.js",
   "scripts": {
     "test": "nyc --reporter=text mocha",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
