@@ -15,6 +15,3 @@ Minimal setup (will use default example keyhook.json, mostly for testing)
 Advanced setup (providing own configuration file)
 
         ./keyhook.js --config ./keyhook.json
-
-## Development
-

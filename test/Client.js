@@ -1,5 +1,5 @@
 var expect = require('chai').expect;
-const nock = require('nock')
+const nock = require('nock');
 
 describe('Trigger', function () {
 
