@@ -1,0 +1,29 @@
+{
+  "name": "keyhook",
+  "version": "1.0.0",
+  "description": "Universal webhook server",
+  "main": "keyhook.js",
+  "scripts": {
+    "test": "nyc --reporter=text mocha",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keyguru/keyhook.git"
+  },
+  "author": "Matej Sychra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keyguru/keyhook/issues"
+  },
+  "homepage": "https://github.com/keyguru/keyhook#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coveralls": "^3.1.0",
+    "mocha": "^8.1.3",
+    "nyc": "^15.1.0"
+  }
+}

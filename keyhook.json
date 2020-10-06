@@ -1,0 +1,25 @@
+{
+    "hooks": [
+        {
+            "name": "Docker Pull Example",
+            "port": 10010,
+            "path": "/docker/deploy/landing-page",
+            "command": "docker pull keyguru/keyguru-landing && docker-compose restart landing",
+            "ref": "not-required-for-docker"
+        },
+        {
+            "name": "Github Webhook Example",
+            "port": 10002,
+            "path": "/githook-landing",
+            "command": "echo landing-page repository has changed",
+            "ref": "master"
+        },
+        {
+            "name": "Test",
+            "port": 32767,
+            "path": "/test",
+            "command": "echo test",
+            "ref": "master"
+        }
+    ]
+}
