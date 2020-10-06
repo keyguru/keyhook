@@ -10,7 +10,7 @@ for (let j = 0; j < process.argv.length; j++) {
     if (fs.existsSync(process.argv[j+1])) {
       config_file = process.argv[j+1];
     } else {
-      console.log("Configuration file", name, "does not exist, using defaults..."),
+      console.log("Configuration file", name, "does not exist, using defaults...");
     }
   }
 }
