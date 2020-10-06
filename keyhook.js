@@ -5,7 +5,6 @@ for (let j = 0; j < process.argv.length; j++) {
   let name = process.argv[j];
   if ((name == "--config") || (name == "-c")) {
     config_file = process.argv[j+1];
-    console.log("» Using config file", config_file);
   }
 }
 

@@ -12,15 +12,13 @@ describe('Configuration', function () {
       assert.equal([1, 2, 3].indexOf(4), -1);
       let hooks = new Configuration(config_file);
       expect(hooks);
-      //assert.doesNotThrow();
     });
   });
 
   describe('#portFromPath(path)', function () {
     it('should provide port for specific path', function () {
       let hooks = new Configuration(config_file);
-      expect(hooks.portFromPath("/test") == 32767);
-      //assert.doesNotThrow();
+      expect(hooks.portFromPath("/test") === 32767);
     });
   });
 
