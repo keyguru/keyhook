@@ -4,10 +4,10 @@ echo "Testing 404"
 
 # should cause 404
 R1=$(curl -s -XPOST -d '{}' http://localhost:10010)
-echo $R1
+echo "${R1}"
 if [[ $R1 == "Bad URI" ]]; then
     echo "SUCCESS"
-    SUCCESS1=true
+#    SUCCESS1=true
 fi
 
 echo
