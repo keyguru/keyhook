@@ -1,6 +1,6 @@
 {
   "name": "@keyguru/keyhook",
-  "version": "1.0.11",
+  "version": "1.0.17",
   "description": "Universal webhook server",
   "main": "keyhook.js",
   "bin": {
@@ -10,7 +10,7 @@
     "test": "nyc --reporter=text mocha",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "prepare": "npm-auto-version",
-    "publish": "npm login && npm publish --access public"
+    "deploy": "npm publish --access public"
   },
   "repository": {
     "type": "git",
