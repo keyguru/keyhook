@@ -14,3 +14,5 @@ Advanced setup (providing own configuration file)
 
         ./keyhook.js --config ./keyhook.json
 
+## Development
+

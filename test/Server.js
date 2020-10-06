@@ -35,5 +35,12 @@ describe('Server', function () {
             done();
         });
     });
+
+    it('should skip, eventually', function (done) {
+        setTimeout(() => {
+          this.skip();
+          done(); // never called!
+        }, 500);
+    });
 });
 
