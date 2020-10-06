@@ -4,6 +4,8 @@
 
 [![Master](https://circleci.com/gh/keyguru/keyhook.svg?style=svg&circle-token=9972a40412c276438dab3b255c54899ac60d5cc1)](Master)
 
+[![Coverage Status](https://coveralls.io/repos/github/keyguru/keyhook/badge.svg?branch=main)](https://coveralls.io/github/keyguru/keyhook?branch=main)
+
 ## Usage
 
 Minimal setup (will use default example keyhook.json, mostly for testing)
