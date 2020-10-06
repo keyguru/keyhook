@@ -4,6 +4,10 @@
 
 [![Master](https://circleci.com/gh/keyguru/keyhook.svg?style=svg&circle-token=9972a40412c276438dab3b255c54899ac60d5cc1)](Master)
 
+## Installation
+
+        npm install -g keyhook 
+        
 ## Usage
 
 Minimal setup (will use default example keyhook.json, mostly for testing)
