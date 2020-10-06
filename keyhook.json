@@ -2,7 +2,7 @@
     "hooks": [
         {
             "name": "Docker Pull Example",
-            "port": 10010,
+            "port": 10001,
             "path": "/docker/deploy/landing-page",
             "command": "docker pull keyguru/keyguru-landing && docker-compose restart landing",
             "ref": "not-required-for-docker"
