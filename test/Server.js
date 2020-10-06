@@ -2,14 +2,13 @@ var expect = require('chai').expect;
 
 describe('Server', function () {
 
-    const config_file = require("../keyhook.json");
     const Server = require("../lib/server");
 
     let server;
 
     describe('#constructor()', function () {
         it('should start on ports from given configuration file', function (done) {
-            server = new Server(config_file);
+            server = new Server("../keyhook.json");
             expect(server);
             done();
         });

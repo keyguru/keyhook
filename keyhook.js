@@ -3,7 +3,7 @@
 const fs = require('fs-extra');
 
 let Server = require("./lib/server");
-let config_file = require("./keyhook.json");
+let config_file = "./keyhook.json";
 
 for (let j = 0; j < process.argv.length; j++) {
   let name = process.argv[j];
