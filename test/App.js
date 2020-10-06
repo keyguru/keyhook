@@ -8,6 +8,15 @@ describe('App', function () {
             expect(App);
             done();
         });
+
+        it('should skip, eventually', function (done) {
+            setTimeout(() => {
+                process.exit(0);
+              this.skip();
+              done(); // never called!
+            }, 500);
+        });
     });
+    
 });
 
