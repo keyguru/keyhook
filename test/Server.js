@@ -16,21 +16,21 @@ describe('Server', function () {
     });
 
     describe('#setup()', function () {
-        it('should setup webhook paths', function (done) {
+        xit('should setup webhook paths', function (done) {
             expect(server.setup_server());
             done();
         });
     });
 
     describe('#start()', function () {
-        it('should start server hooks', function (done) {
+        xit('should start server hooks', function (done) {
             expect(server.start_hooks());
             done();
         });
     });
 
     describe('#stop()', function () {
-        it('should stop server', function (done) {
+        xit('should stop server', function (done) {
             expect(server.stop_server());
             done();
         });
