@@ -5,7 +5,7 @@
             "port": 10001,
             "path": "/docker/deploy/landing-page",
             "command": "docker pull keyguru/keyguru-landing && docker-compose restart landing",
-            "ref": "not-required-for-docker"
+            "ref": "keyguru/keyguru-landing"
         },
         {
             "name": "Github Webhook Example",

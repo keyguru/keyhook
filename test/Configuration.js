@@ -42,6 +42,7 @@ describe('Configuration', function () {
       expect(path);
       expect(port);
       let command = hooks.getCommandForPath(path, port);
+      console.log("command:", command);
       expect(command);
     }
     done();
