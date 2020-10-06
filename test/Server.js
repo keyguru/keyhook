@@ -7,30 +7,30 @@ describe('Server', function () {
 
     let server;
 
-    describe('#constructor()', function (done) {
-        it('should start on ports from given configuration file', function () {
+    describe('#constructor()', function () {
+        it('should start on ports from given configuration file', function (done) {
             server = new Server(config_file);
             expect(server);
             done();
         });
     });
 
-    describe('#setup()', function (done) {
-        it('should setup webhook paths', function () {
+    describe('#setup()', function () {
+        it('should setup webhook paths', function (done) {
             expect(server.setup_server());
             done();
         });
     });
 
-    describe('#start()', function (done) {
-        it('should start server hooks', function () {
+    describe('#start()', function () {
+        it('should start server hooks', function (done) {
             expect(server.start_hooks());
             done();
         });
     });
 
-    describe('#stop()', function (done) {
-        it('should stop server', function () {
+    describe('#stop()', function () {
+        it('should stop server', function (done) {
             expect(server.stop_server());
             done();
         });
