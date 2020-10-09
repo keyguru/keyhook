@@ -6,6 +6,15 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/keyguru/keyhook/badge.svg?branch=main)](https://coveralls.io/github/keyguru/keyhook?branch=main)
 
+## Installation
+
+        # Install latest node.js (tested with 14.x)
+        curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+        sudo apt-get install -y nodejs
+
+        # Install keyhook globally
+	npm install -g @keyguru/keyhook
+
 ## Usage
 
 Minimal setup (will use default example keyhook.json, mostly for testing)
