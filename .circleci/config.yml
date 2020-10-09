@@ -15,7 +15,8 @@ jobs:
           command:  |
             npm install .
             npm run prepare
-            npm public --access public
+            npm run deploy
+# TODO: only with master branch
 
 workflows:
   node-tests:
