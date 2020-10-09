@@ -19,9 +19,7 @@ jobs:
           name: Build and Deploy NPM Package
           command:  |
             npm install .
-            npm run prepare
             npm run deploy
-# TODO: only with master branch
 
 workflows:
   node-tests:
