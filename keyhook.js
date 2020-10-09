@@ -1,5 +1,11 @@
 #!/usr/bin/env node
 
+let sqreen = null;
+
+if ((typeof(process.env.SQREEN_TOKEN) !== "undefined") && (process.env.SQREEN_TOKEN !== null)){
+  sqreen = require('sqreen');
+}
+
 const fs = require('fs-extra');
 
 let Server = require("./lib/server");
