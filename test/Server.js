@@ -7,7 +7,7 @@ describe('Server', function () {
     let server;
 
     it('should start on ports from given configuration file', function (done) {
-        server = new Server("../keyhook.json");
+        server = new Server(__dirname + "/../keyhook.json");
         expect(server);
         done();
     });

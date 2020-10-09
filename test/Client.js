@@ -5,7 +5,7 @@ describe('Trigger', function () {
 
     const Server = require("../lib/server");
 
-    let server = new Server("../keyhook.json");
+    let server = new Server(__dirname + "/../keyhook.json");
 
     it('should start on ports from given configuration file', function (done) {
         process.env.ENVIRONMENT = "circleci"; // prevent exiting server on test

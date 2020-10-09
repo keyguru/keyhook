@@ -4,7 +4,7 @@ var expect = require('chai').expect;
 
 describe('Configuration', function () {
 
-  const config_file = require("../keyhook.json");
+  const config_file = __dirname + "/../keyhook.json";
   const Configuration = require("../lib/config");
 
   it('should load with default configuration file', function () {
