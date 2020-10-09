@@ -13,6 +13,7 @@ jobs:
       - run:
           name: Build and Deploy NPM Package
           command:  |
+            npm install .
             npm run prepare
             npm public --access public
 
@@ -21,3 +22,4 @@ workflows:
     jobs:
       - node/test
       - npm-deploy
+        requires: node/test
