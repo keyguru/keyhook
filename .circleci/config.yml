@@ -1,7 +1,23 @@
 version: 2.1
 orbs:
   node: circleci/node@3.0.0
+
+jobs:
+
+  npm-deploy:
+    working_directory: ~/code
+    docker:
+      - image: circleci/node:10.16.3
+    steps:
+      - checkout
+      - run:
+          name: Build and Deploy NPM Package
+          command:  |
+            npm run prepare
+            npm public --access public
+
 workflows:
   node-tests:
     jobs:
       - node/test
+      - npm-deploy
