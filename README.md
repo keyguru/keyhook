@@ -13,7 +13,7 @@
         sudo apt-get install -y nodejs
 
         # Install keyhook globally
-	npm install -g @keyguru/keyhook
+		npm install -g @keyguru/keyhook
 
 ## Usage
 
@@ -24,3 +24,19 @@ Minimal setup (will use default example keyhook.json, mostly for testing)
 Advanced setup (providing own configuration file)
 
         ./keyhook.js --config ./keyhook.json
+
+Sample config file:
+
+```
+{
+    "hooks": [
+        {
+            "name": "Test",
+            "port": 32767,
+            "path": "/test",
+            "command": "echo test",
+            "ref": "master"
+        }
+    ]
+}
+```
